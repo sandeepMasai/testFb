@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Developer & Website Maker Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .form-container {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 15px;
+        width: 400px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+      }
+
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+      }
+
+      .form-group textarea {
+        resize: none;
+        height: 80px;
+      }
+
+      .submit-btn {
+        width: 100%;
+        padding: 10px;
+        background: #667eea;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .submit-btn:hover {
+        background: #5a67d8;
+      }
+
+      .logo {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      .logo img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="logo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+          alt="Facebook Logo"
+        />
+      </div>
+      <h2>Website Development Request</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service">
+            <option value="">Select Service</option>
+            <option value="portfolio">Portfolio Website</option>
+            <option value="business">Business Website</option>
+            <option value="ecommerce">E-commerce Website</option>
+            <option value="webapp">Web Application</option>
+            <option value="redesign">Website Redesign</option>
+            <option value="android">Android Mobile App</option>
+            <option value="reactnative">React Native Mobile App</option>
+            <option value="ios">iOS Mobile App</option>
+            <option value="fullstack">
+              Full Stack Web + Mobile App Package
+            </option>
+            <option value="uiux">UI/UX Design</option>
+            <option value="seo">SEO Optimization</option>
+            <option value="maintenance">Website Maintenance</option>
+            <option value="api">API Development</option>
+            <option value="custom">Custom Software Development</option>
+            <option value="school">School Website</option>
+            <option value="college">College Website</option>
+            <option value="hotel">Hotel Website</option>
+            <option value="hospital">Hospital Website</option>
+            <option value="restaurant">Restaurant Website</option>
+            <option value="hostel">Hostel Website</option>
+            <option value="pg">PG / Paying Guest Website</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="budget">Budget (₹)</label>
+          <input
+            type="number"
+            id="budget"
+            name="budget"
+            placeholder="Enter your budget"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Project Details</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Describe your project"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Request</button>
+      </form>
+    </div>
+  </body>
+</html>
